@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Spring boot with ClickHouse PoC
+  datasource:
+    driver-class-name: com.clickhouse.jdbc.ClickHouseDriver
+    url: jdbc:clickhouse://localhost:8123/default
+

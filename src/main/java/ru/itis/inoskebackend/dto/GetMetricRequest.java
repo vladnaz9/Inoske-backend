@@ -7,7 +7,7 @@ import java.util.List;
 
 public record GetMetricRequest(
         @RequestParam(required = false)
-        List<String> shopNames,
+        String shopNames,
         @RequestParam(required = false)
         LocalDate dateStart,
         @RequestParam(required = false)

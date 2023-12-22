@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:63342")
 @RestController
 @RequestMapping("/metrics")
 class MetricController {
@@ -21,6 +22,7 @@ class MetricController {
 
     @GetMapping
     public List<Metric> getMetric(GetMetricRequest metricRequest) {
+        System.out.println(metricRequest);
         return metricService.getMetric(metricRequest);
     }
 
